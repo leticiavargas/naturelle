@@ -9,6 +9,7 @@
   }
   
   .header-icon svg{
+    margin-top: 4px;
     font-size: 30px;
     color: #1C0908;
   }
@@ -23,3 +24,14 @@
     color: #1C0908;
   }
   
+  .header-title-secondary {
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #1C0908;
+    width: 100%;
+
+  }

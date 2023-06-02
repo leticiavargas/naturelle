@@ -11,6 +11,8 @@ const Header = ({ title, linkback }) => {
         </div>
       </a>
       <div className="header-title">{title}</div>
+      {/* Existe a classe header-title: para uso institucional 
+      header-title-secondary: para uso na prateleira  */}
     </div>
   );
 };
