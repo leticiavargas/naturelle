@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       Projeto Naturelle
       <p> Explicando como fazer Code Review </p>
+      <p> Tentativa 2 pq o primeiro deu ruim kkk</p>
     </div>
   );
 }
