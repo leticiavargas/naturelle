@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import Vitrine from "./pages/Vitrine";
 
 function App() {
   return (
     <div className="App">
-      Projeto Naturelle
+      <Vitrine />
     </div>
   );
 }
