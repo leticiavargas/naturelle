@@ -21,7 +21,7 @@ const ProductCardImage = ({
       />
       {isShareable && (
         <button className={`ProductCardImageShareIcon ${shareClass}`}>
-          {/* TO-DO: lógica de compartilhamento ao clicar no botão */}
+          {/* TO-DO: lógica de compartilhamento ao clicar no botão compartilhar*/}
           <img
             src="/ProductCardImage/Compartilhar.svg"
             alt="Ícone de compartilhar"
