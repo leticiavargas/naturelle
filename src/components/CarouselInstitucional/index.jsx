@@ -7,15 +7,14 @@ const CarouselInstitucional = ({ title='', data=[] }) => {
       {title && <h1>{title}</h1>}
        
         <div className="carousel">
-          {data && data.map((image) => (
-            <div className='image-container'>
-              <img src={image.url} alt={image.url} />
+          {data && data.map((image, index) => (
+            <div className='image-container' key={index}>
+              <img src={image.url} alt={image.alt} />
               {image.title &&
               <a href={"http://localhost:3000/" + image.goTo}>
                 <button className='button-cover'>
                   {image.title}
                 </button>
-
               </a>
               }
             </div>
