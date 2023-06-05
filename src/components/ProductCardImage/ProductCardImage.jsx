@@ -10,7 +10,7 @@ const ProductCardImage = ({
   imageClass,
   shareClass,
   labelContainerClass,
-  labelClass
+  labelClass,
 }) => {
   return (
     <div className={`ProductCardImageContainer ${containerClass}`}>
@@ -21,6 +21,7 @@ const ProductCardImage = ({
       />
       {isShareable && (
         <button className={`ProductCardImageShareIcon ${shareClass}`}>
+          {/* TO-DO: lógica de compartilhamento ao clicar no botão */}
           <img
             src="/ProductCardImage/Compartilhar.svg"
             alt="Ícone de compartilhar"
