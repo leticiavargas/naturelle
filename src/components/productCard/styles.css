@@ -1,16 +1,26 @@
+.cardDescription,
+.cardRating,
+.cardPrice {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.cardContentContainer,
+.cardRating,
+.cardContainer,
+.cardDescription {
+  display: flex;
+}
+
 .cardDescription {
   width: 220px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   text-align: start;
 
   color: #694948;
-
-  display: flex;
 
   margin-top: 12px;
   margin-bottom: 0;
@@ -19,7 +29,6 @@
 .cardContainer {
   box-sizing: border-box;
 
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -42,15 +51,12 @@
 
   margin: 10px 0 6px 0;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
 
   color: #9c8b8a;
 
-  display: flex;
   align-items: flex-start;
 
   gap: 20px;
@@ -62,7 +68,6 @@
   left: 20px;
   top: calc(50% - 112px / 2 - 467px);
 
-  /* background: blue; */
   border-radius: 8px;
   flex-shrink: 0;
 }
@@ -71,8 +76,6 @@
   width: 81px;
   height: 24px;
 
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
@@ -85,8 +88,8 @@
 }
 
 .cardContentContainer {
-  display: flex;
   flex-direction: column;
-  height: 112px;
   justify-content: center;
+
+  height: 112px;
 }
