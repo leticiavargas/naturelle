@@ -5,7 +5,7 @@ const Card = ({ img, name, weigth, rating, rate, price }) => {
   return (
     <div className="cardContainer">
       <div className="cardImageContainer">
-        <img alt="product" src={img}></img>
+        <img alt="Imagem do Produto" src={img}></img>
       </div>
       <div className="cardContentContainer">
         <p className="cardDescription">
