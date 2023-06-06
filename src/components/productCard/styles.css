@@ -89,7 +89,7 @@
 
 .cardContentContainer {
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   height: 112px;
 }
