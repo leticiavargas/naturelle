@@ -5,7 +5,7 @@ import arrowIcon from "./chevron_right.svg";
 // Para usar o icone padrão: ativar useArrowIcon = true
 // Para usar um icone da react-icons, passar o icone na propriedade Icon
 const Button = ({
-  type = "text",
+  type = "button", // submit || reset
   value,
   className,
   theme = "light",
