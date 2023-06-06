@@ -1,10 +1,11 @@
 import "./App.css";
-import Header from "./components";
+import Button from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <Header title="Algo aqui" linkback="http://www.google.com" />
+      <Button value="Entrar" theme="dark" />
+      <Button value="Ver mais produtos" useArrowIcon={true} />
     </div>
   );
 }
