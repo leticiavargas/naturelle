@@ -46,7 +46,7 @@
 
 .cardRating {
   width: 100%;
-  height: 18px;
+  height: min-content;
 
   margin: 10px 0 6px 0;
 
