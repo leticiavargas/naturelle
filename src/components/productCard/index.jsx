@@ -1,9 +1,13 @@
-import "./styles.css";
 import CustomizedRating from "../starRating";
+import "./styles.css";
 
 const Card = ({ img, name, weigth, rating, rate, price }) => {
+  const redirectToItem = () => {
+    //  TODO implementar redirecionamento para o item quando o backnd estiver pronto
+  };
+
   return (
-    <div className="cardContainer">
+    <div className="cardContainer" onClick={redirectToItem}>
       <div className="cardImageContainer">
         <img alt="product" src={img}></img>
       </div>
