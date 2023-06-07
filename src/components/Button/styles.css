@@ -27,10 +27,15 @@
 }
 
 .light:active {
-    filter: contrast(0.5)
+    filter: contrast(0.4)
 }
 
 .dark {
     background-color: #502827;
     color: #FEFAEF;
+}
+
+.image_size {
+    width: 12px;
+    height: 12px;
 }

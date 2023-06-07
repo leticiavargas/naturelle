@@ -10,6 +10,9 @@ const Button = ({
   className,
   theme = "light",
   useArrowIcon = false,
+  iconImageUrl,
+  altIconImage = "icon image",
+  iconClassName,
   Icon,
   onClick,
 }) => {
@@ -21,7 +24,17 @@ const Button = ({
     <button className={buttonClassName} type={type} onClick={onClick}>
       {value}
       {useArrowIcon ? (
-        <img src={arrowIcon} alt="arrow icone" />
+        <img
+          className={`image_size ${iconClassName}`}
+          src={arrowIcon}
+          alt="arrow icone"
+        />
+      ) : iconImageUrl ? (
+        <img
+          className={`image_size ${iconClassName}`}
+          src={iconImageUrl}
+          alt={altIconImage}
+        />
       ) : Icon ? (
         <Icon />
       ) : (
