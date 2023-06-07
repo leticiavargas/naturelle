@@ -11,18 +11,15 @@ const Index = ({
 }) => {
   return (
     <div className="cointainerInput">
-      <label>
-        <span>{label}</span>
-        <input
-          type={type}
-          id={name}
-          placeholder={placeholder}
-          value={value}
-          name={name}
-          onChange={onChange}
-        />
-      </label>
-
+      <label htmlFor={name}>{label}</label>
+      <input
+        type={type}
+        id={name}
+        placeholder={placeholder}
+        value={value}
+        name={name}
+        onChange={onChange}
+      />
       {detail && <p>{detail}</p>}
     </div>
   );
