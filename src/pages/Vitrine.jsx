@@ -1,9 +1,9 @@
-import FilterProduct from "../components/FilterProduct/FilterProduct";
+import ProductFilterSelect from "../components/ProductFilterSelect/ProductFilterSelect";
 
 const Vitrine = () => {
   return (
     <div>
-      <FilterProduct />
+      <ProductFilterSelect />
     </div>
   );
 };

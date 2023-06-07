@@ -3,12 +3,9 @@
   height: 36px;
   border: 1px solid #605a57;
   border-radius: 6px;
-  background: #fefaef;
+  background: transparent;
   padding-left: 16px;
-  margin-top: 300px;
-  margin-bottom: 300px;
   appearance: none;
-  outline: none;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
@@ -17,10 +14,6 @@
 
 #SCFilterProduct:focus-within {
   outline: 1.5px solid #605a57;
-}
-
-option:hover {
-  background-color: #605a57;
 }
 
 .SCCustomSelect button {
