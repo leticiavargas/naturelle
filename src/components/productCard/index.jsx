@@ -15,7 +15,9 @@ const Card = ({ img, name, weigth, rating, rate, price }) => {
           <CustomizedRating rating={rate} precision={0.1}></CustomizedRating>{" "}
           {rating} avaliações
         </p>
-        <p className="cardPrice">R$ {price.toFixed(2)}</p>
+        <p className="cardPrice">
+          R$ {price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+        </p>
       </div>
     </div>
   );
