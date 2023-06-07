@@ -47,7 +47,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carouselContainer" alt="Carrossel com imagens do produto">
       <div
         className="carousel"
         {...handlers}
@@ -60,7 +60,7 @@ const Carousel = ({ images }) => {
             key={index}
             src={image}
             alt={`${index}`}
-            className={`carousel-image ${
+            className={`carouselImage ${
               index === currentIndex ? "active" : ""
             }`}
           />
