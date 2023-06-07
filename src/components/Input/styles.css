@@ -12,6 +12,11 @@
 }
 
 .cointainerInput label {
+  display: flex;
+  flex-direction: column;
+}
+
+.cointainerInput span {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

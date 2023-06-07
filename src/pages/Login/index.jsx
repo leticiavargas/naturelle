@@ -1,6 +1,6 @@
 import "./styles.css";
 import { useState } from "react";
-import marcaNaturelle from "../../assets/MarcaNaturelle.svg";
+import marcaNaturelle from "../../assets/marcaNaturelle.svg";
 import Input from "../../components/Input";
 
 const Login = () => {
@@ -29,7 +29,6 @@ const Login = () => {
         value={form.password}
         onChange={(event) => inputOnChangeHandler(event, "password")}
       />
-      <button onClick={() => console.log(form)}>Qualquer coisa</button>
     </div>
   );
 };
