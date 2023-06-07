@@ -1,0 +1,26 @@
+import CustomizedRating from "../starRating";
+import "./styles.css";
+
+const Card = ({ img, name, weigth, rating, rate, price }) => {
+  return (
+    <div className="cardContainer">
+      <div className="cardImageContainer">
+        <img alt="Imagem do Produto" src={img}></img>
+      </div>
+      <div className="cardContentContainer">
+        <h2 className="cardDescription">
+          {name} | {weigth}
+        </h2>
+        <p className="cardRating">
+          <CustomizedRating rating={rate} precision={0.1}></CustomizedRating>{" "}
+          {rating} avaliações
+        </p>
+        <p className="cardPrice">
+          R$ {price.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
