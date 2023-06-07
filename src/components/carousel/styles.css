@@ -1,0 +1,40 @@
+.carouselContainer {
+  width: 341px;
+  height: 333px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carouselImage {
+  flex-shrink: 0;
+  width: 341px;
+  height: 333px;
+  object-fit: cover;
+}
+
+.carouselImage.active {
+  opacity: 1;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: black;
+}
