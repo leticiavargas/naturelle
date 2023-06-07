@@ -2,10 +2,10 @@ import "./ProductCardImage.css";
 const ProductCardImage = ({
   productAltText,
   productImage,
-  isShareable = true,
-  hasSugar = true,
-  hasGluten = true,
-  hasMilk = true,
+  isShareable,
+  hasSugar,
+  hasGluten,
+  hasMilk,
   containerClass,
   imageClass,
   shareClass,
@@ -53,6 +53,13 @@ const ProductCardImage = ({
       </div>
     </div>
   );
+};
+
+ProductCardImage.defaultProps = {
+  isShareable: false,
+  hasSugar: false,
+  hasGluten: false,
+  hasMilk: false,
 };
 
 export default ProductCardImage;
