@@ -1,5 +1,6 @@
 import "./App.css";
-import Header from "./components";
+import Header from "./components/header";
+import PageMarker from "./components/PageMarker";
 
 function App() {
   return (
