@@ -35,10 +35,8 @@ const Button = ({
           src={iconImageUrl}
           alt={altIconImage}
         />
-      ) : Icon ? (
-        <Icon />
       ) : (
-        ""
+        Icon && <Icon />
       )}
     </button>
   );
