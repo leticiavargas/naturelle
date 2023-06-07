@@ -8,9 +8,9 @@ const Card = ({ img, name, weigth, rating, rate, price }) => {
         <img alt="Imagem do Produto" src={img}></img>
       </div>
       <div className="cardContentContainer">
-        <p className="cardDescription">
+        <h2 className="cardDescription">
           {name} | {weigth}
-        </p>
+        </h2>
         <p className="cardRating">
           <CustomizedRating rating={rate} precision={0.1}></CustomizedRating>{" "}
           {rating} avaliações
