@@ -1,0 +1,43 @@
+.ProductCardImageContainer {
+  width: 112px;
+  height: 112px;
+  border-radius: 8px;
+  position: relative;
+}
+.ProductCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ProductCardImageShareIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  padding: 5% 5%;
+}
+
+.ProductCardImageLabels {
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 3.5%;
+  padding: 3% 7%;
+}
+.ProductCardImageLabel {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
