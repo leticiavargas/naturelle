@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border: 1px #9c8b8a solid;
-  background-color: #f0e7cf;
 
   border-radius: 50%;
 }

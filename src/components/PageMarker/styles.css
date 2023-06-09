@@ -1,8 +1,11 @@
 .pageMakerContainer {
   display: grid;
-  background-color: #f0e7cf;
   min-height: 24px;
   place-items: center;
+}
+
+.pageMakerContainerBackground {
+  background-color: #f0e7cf;
 }
 .line {
   width: 100%;

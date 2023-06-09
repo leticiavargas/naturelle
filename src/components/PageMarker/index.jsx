@@ -17,7 +17,7 @@ const PageMarker = ({ numOfPages, atualPage }) => {
   };
 
   return (
-    <div className="pageMakerContainer">
+    <div className={"pageMakerContainer pageMakerContainerBackground"}>
       <div className="line"></div>
       <div className="markers">{renderMarkers()}</div>
     </div>
