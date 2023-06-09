@@ -1,0 +1,12 @@
+.buttonNetworkIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 48px;
+  height: 48px;
+  background: #502827;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
