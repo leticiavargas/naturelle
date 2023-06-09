@@ -1,0 +1,23 @@
+.pageMakerContainer {
+  display: grid;
+  min-height: 24px;
+  place-items: center;
+}
+
+.pageMakerContainerBackground {
+  background-color: #f0e7cf;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #9c8b8a;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.markers {
+  display: flex;
+  grid-row: 1;
+  grid-column: 1;
+  gap: 32px;
+}
