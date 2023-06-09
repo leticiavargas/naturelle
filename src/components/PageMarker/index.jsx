@@ -6,11 +6,9 @@ const PageMarker = ({ numOfPages, atualPage }) => {
     const markers = [];
 
     for (let i = 0; i < numOfPages; i++) {
-      if (atualPage - 1 === i) {
-        markers.push(<CircleMarker key={i} isActive />);
-      } else {
-        markers.push(<CircleMarker key={i} />);
-      }
+      atualPage - 1 === i
+        ? markers.push(<CircleMarker key={i} isActive />)
+        : markers.push(<CircleMarker key={i} />);
     }
 
     return markers;
