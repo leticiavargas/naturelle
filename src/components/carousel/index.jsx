@@ -1,10 +1,8 @@
 import { useSwipeable } from "react-swipeable";
-import imagem from "../../assets/dif.svg";
 import React, { useState } from "react";
 import "./styles.css";
 
 const Carousel = ({ images }) => {
-  images = [imagem, imagem, imagem];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [offsetX, setOffsetX] = useState(0);
   const [startX, setStartX] = useState(0);
