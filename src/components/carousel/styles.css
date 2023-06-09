@@ -1,6 +1,7 @@
 .carouselContainer {
   width: 341px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .carousel {
@@ -10,24 +11,21 @@
 
 .carouselImage {
   flex-shrink: 0;
-  width: 341px;
+  width: calc(100%);
   height: 333px;
   object-fit: cover;
-}
-
-.carouselImage.active {
-  opacity: 1;
+  /* margin-right: 20px; */
 }
 
 .indicators {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 12px;
+  gap: 7px;
 }
 
 .indicator {
   border-radius: 10px;
-  margin: 0 5px;
 
   width: 12px;
   height: 0px;
