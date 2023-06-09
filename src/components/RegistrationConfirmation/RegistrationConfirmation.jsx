@@ -1,5 +1,6 @@
 import "./styles.css";
-import checkIcon from "../../assets/images/check-circle.svg";
+import checkIcon from "../../assets/images/circle-check.svg";
+import { useState, useEffect } from "react";
 const RegistrationConfirmation = () => {
   const [user, setUser] = useState("");
 

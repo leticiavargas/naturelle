@@ -1,12 +1,10 @@
 .container {
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #502827;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 295.5px 0px 287.5px 0px;
 }
 
 .container img {
