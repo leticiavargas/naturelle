@@ -1,0 +1,7 @@
+.hyperlink_container {
+    font: 400 14px Roboto;
+}
+
+.hyperlink_container a:link, a:visited {
+    color:  #9C8B8A;;
+}
