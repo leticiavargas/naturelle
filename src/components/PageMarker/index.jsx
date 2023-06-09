@@ -1,6 +1,6 @@
 import "./styles.css";
 import CircleMarker from "./components/CircleMarker";
-
+//
 const PageMarker = ({ numOfPages, atualPage }) => {
   const renderMarkers = () => {
     const markers = [];
