@@ -1,0 +1,16 @@
+.modalTitle_component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTitle_component h1 {
+    font: 700 26px Roboto;
+    color: #1C0908;
+ }
+
+.expand_more_button {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+}
