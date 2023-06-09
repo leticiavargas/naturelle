@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #502827;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 295.5px 0px 287.5px 0px;
+}
+
+.container img {
+  width: 144px;
+}
+
+.registrationConfirmation {
+  padding-top: 48px;
+  text-align: center;
+  color: #fefaef;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.registrationConfirmation h1 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.registrationConfirmation p {
+  font-size: 16px;
+}
