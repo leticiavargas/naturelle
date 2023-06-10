@@ -5,7 +5,8 @@
 }
 
 .modalTitle_component h1 {
-    font: 700 26px Roboto;
+    font-size: 26px;
+    font-weight: 700;
     color: #1C0908;
  }
 
