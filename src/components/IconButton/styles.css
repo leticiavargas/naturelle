@@ -1,0 +1,16 @@
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #502827;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonIcon img {
+  width: 20px;
+  height: 20px;
+}
