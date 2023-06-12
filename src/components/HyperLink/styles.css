@@ -1,0 +1,6 @@
+.hyperlink {
+    font: 400 14px Roboto;
+    color:  #9C8B8A;
+    text-decoration: underline;
+    cursor: pointer;
+}
