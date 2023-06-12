@@ -9,3 +9,8 @@
   outline: none;
   cursor: pointer;
 }
+
+.buttonIcon img {
+  width: 20px;
+  height: 20px;
+}
