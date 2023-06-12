@@ -12,7 +12,7 @@ const CustomizedRating = ({ rating, precision }) => {
   };
   return (
     <Rating
-      name="customized-color"
+      name="Avaliação do produto"
       value={rating}
       getLabelText={(value) => `${value} Estrela${value !== 1 ? "s" : ""}`}
       precision={precision || 0.5}
