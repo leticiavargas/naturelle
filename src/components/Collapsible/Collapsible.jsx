@@ -6,7 +6,7 @@ import "./Collapsible.css";
 
 const Collapsible = ({ label, children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [height, setHeight] = useState("0px");
+  const [height, setHeight] = useState(0);
   const ref = useRef(null);
 
   const toggle = () => {
@@ -15,8 +15,8 @@ const Collapsible = ({ label, children }) => {
 
   useEffect(() => {
     isOpen
-      ? setHeight(`${ref.current.getBoundingClientRect().height}px`)
-      : setHeight("0px");
+      ? setHeight(ref.current.getBoundingClientRect().height)
+      : setHeight(0);
   }, [isOpen]);
   return (
     <div className="collapsibleSection">
@@ -24,10 +24,8 @@ const Collapsible = ({ label, children }) => {
         {label} {isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
       </button>
       {isOpen && (
-        <div className="collapsibleContent" style={{ height: height }}>
-          <div ref={ref}>
-            {children}
-          </div>
+        <div className="collapsibleContent" style={{ height: `${height}px` }}>
+          <div ref={ref}>{children}</div>
         </div>
       )}
     </div>
