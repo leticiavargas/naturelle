@@ -51,7 +51,7 @@ const Login = () => {
         <HyperLink text="Esqueceu sua senha?" />
       </div>
       <div className="lineSeparator"></div>
-      <p>Entre com sua conta</p>
+      <p className="paragraphForContainerIcons">Entre com sua conta</p>
       <div className="containerIcons">
         <IconButton icon={iconGoogle} alt={"Botão para logar com o Google"} />
         <IconButton
