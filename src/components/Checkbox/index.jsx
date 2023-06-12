@@ -1,9 +1,10 @@
 import "./styles.css";
 
-const Checkbox = () => {
+const Checkbox = ({ label, onChange }) => {
   return (
     <div className="checkboxContainer">
-      <div></div>
+      <input type="checkbox" id="checkbox-1" onChange={onChange} />
+      <label htmlFor="checkbox-1">{label}</label>
     </div>
   );
 };
