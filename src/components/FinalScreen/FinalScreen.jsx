@@ -1,7 +1,7 @@
 import "./styles.css";
 import checkIcon from "../../assets/images/circle-check.svg";
 import { useState, useEffect } from "react";
-const RegistrationConfirmation = () => {
+const FinalScreen = ({ title, description }) => {
   const [user, setUser] = useState("");
 
   useEffect(() => {
@@ -17,14 +17,16 @@ const RegistrationConfirmation = () => {
     //   });
   }, []);
   return (
-    <body className="container">
-      <img src={checkIcon} alt="check-icon" />
-      <text className="registrationConfirmation">
-        <h1>Boas-vindas, {user}!</h1>
-        <p>Seus dados foram salvos com sucesso!</p>
-      </text>
-    </body>
+    <div className="containerFinalScreen">
+      <img id="checkIcon" src={checkIcon} alt="check-icon" />
+      <div className="confirmation">
+        <h1>
+          {title} {user}!
+        </h1>
+        <p>{description}</p>
+      </div>
+    </div>
   );
 };
 
-export default RegistrationConfirmation;
+export default FinalScreen;

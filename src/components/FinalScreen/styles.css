@@ -1,4 +1,4 @@
-.container {
+.containerFinalScreen {
   height: 100vh;
   background-color: #502827;
   display: flex;
@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.container img {
+#checkIcon {
   width: 144px;
 }
 
-.registrationConfirmation {
+.confirmation {
   padding-top: 48px;
   text-align: center;
   color: #fefaef;
@@ -19,11 +19,11 @@
   font-style: normal;
 }
 
-.registrationConfirmation h1 {
+.confirmation h1 {
   font-size: 32px;
   padding-bottom: 10px;
 }
 
-.registrationConfirmation p {
+.confirmation p {
   font-size: 16px;
 }
