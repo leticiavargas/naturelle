@@ -1,8 +1,9 @@
+import ProductCardImage from "../ProductCardImage/ProductCardImage";
 import { useSwipeable } from "react-swipeable";
 import React, { useState } from "react";
 import "./styles.css";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ product }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [offsetX, setOffsetX] = useState(0);
   const [startX, setStartX] = useState(0);
@@ -25,9 +26,9 @@ const Carousel = ({ images }) => {
   });
 
   const showNextImage = () => {
-    const nextIndex = (currentIndex + 1) % images.length;
+    const nextIndex = (currentIndex + 1) % product.image.length;
     if (nextIndex === 0) {
-      setCurrentIndex(images.length - 1);
+      setCurrentIndex(product.image.length - 1);
     } else {
       setCurrentIndex(nextIndex);
     }
@@ -35,8 +36,9 @@ const Carousel = ({ images }) => {
   };
 
   const showPrevImage = () => {
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    if (prevIndex === images.length - 1) {
+    const prevIndex =
+      (currentIndex - 1 + product.image.length) % product.image.length;
+    if (prevIndex === product.image.length - 1) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(prevIndex);
@@ -53,19 +55,16 @@ const Carousel = ({ images }) => {
           transform: `translateX(calc(-${currentIndex}00% + ${offsetX}px))`,
         }}
       >
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`${index}`}
-            className={`carouselImage ${
-              index === currentIndex ? "active" : ""
-            }`}
-          />
+        {product.image.map((product, i) => (
+          <div
+            className={`carouselImage ${i === currentIndex ? "active" : ""}`}
+          >
+            <ProductCardImage key={i} productImage={product}></ProductCardImage>
+          </div>
         ))}
       </div>
       <div className="indicators">
-        {images.map((_, index) => (
+        {product.image.map((_, index) => (
           <div
             key={index}
             className={`indicator ${index === currentIndex ? "active" : ""}`}

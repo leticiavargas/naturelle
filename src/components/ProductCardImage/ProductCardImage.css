@@ -1,6 +1,4 @@
 .ProductCardImageContainer {
-  width: 112px;
-  height: 112px;
   border-radius: 8px;
   position: relative;
 }
@@ -9,9 +7,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .ProductCardImageShareIcon {
