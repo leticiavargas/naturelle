@@ -28,7 +28,7 @@ Estamos há dez anos no mercado, sempre buscando expandir o nosso negócio, tant
 function Mission() {
   return (
     <div className="mission-screen">
-      <Header title="Nossa missão" linkback="/" />
+      <Header title="Conheça a Naturelle" linkback="/" />
       <CardImage
         ImagemBackground={"/mission.png"}
         TextFront={"Somos uma marca com história e propósito"}
