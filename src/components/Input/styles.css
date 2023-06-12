@@ -31,6 +31,8 @@
   line-height: 150%;
   padding-bottom: 7.5px;
   color: #694948;
+  -webkit-box-shadow: 0 0 0 30px #fefaef inset;
+  -webkit-text-fill-color: #694948 !important;
 }
 
 .cointainerInput input::placeholder {
