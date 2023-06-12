@@ -1,8 +1,8 @@
 import "./styles.css";
-import Header from "../../../components/header";
+import Header from "../../../components/Header";
 import CarouselInstitucional from "../../../components/CarouselInstitucional";
 import TextFormatted from "../../../components/TextFormatted";
-import CardImage from "../../../components/CardImage/CardImage";
+import CardImage from "../../../components/CardImage";
 
 const data = [
   {
