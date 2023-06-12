@@ -12,7 +12,7 @@ const Card = ({ img, name, weigth, rating, rate, price }) => {
           {name} | {weigth}
         </h2>
         <p className="cardRating">
-          <CustomizedRating rating={rate} precision={0.1}></CustomizedRating>{" "}
+          <CustomizedRating rating={rate} precision={0.1}></CustomizedRating>
           {rating} avaliações
         </p>
         <p className="cardPrice">
