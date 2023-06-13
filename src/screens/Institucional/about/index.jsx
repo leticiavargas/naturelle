@@ -1,5 +1,5 @@
 import "./styles.css";
-import Header from "../../../components/Header";
+import Header from "../../../components/header";
 import CarouselInstitucional from "../../../components/CarouselInstitucional";
 import TextFormatted from "../../../components/TextFormatted";
 import CardImage from "../../../components/CardImage";
