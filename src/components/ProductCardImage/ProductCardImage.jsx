@@ -2,10 +2,8 @@ import "./ProductCardImage.css";
 const ProductCardImage = ({
   productAltText,
   productImage,
+  tags,
   isShareable,
-  hasSugar,
-  hasGluten,
-  hasMilk,
   containerClass,
   imageClass,
   shareClass,
@@ -29,24 +27,24 @@ const ProductCardImage = ({
         </button>
       )}
       <div className={`ProductCardImageLabels ${labelContainerClass}`}>
-        {hasMilk && (
+        {tags?.includes("lactoseFree") && (
           <img
             src="/ProductCardImage/etiqueta-zero-lactose.svg"
-            alt="Produto zero açucar"
+            alt="Produto sem lactose"
             className={`ProductCardImageLabel ${labelClass}`}
           />
         )}
-        {hasGluten && (
+        {tags?.includes("glutenFree") && (
           <img
             src="/ProductCardImage/etiqueta-zero-gluten.svg"
-            alt="Produto zero gluten"
+            alt="Produto sem gluten"
             className={`ProductCardImageLabel ${labelClass}`}
           />
         )}
-        {hasSugar && (
+        {tags?.includes("sugarFree") && (
           <img
             src="/ProductCardImage/etiqueta-zero-acucar.svg"
-            alt="Produto zero lactose"
+            alt="Produto sem açúcar"
             className={`ProductCardImageLabel ${labelClass}`}
           />
         )}
@@ -57,9 +55,12 @@ const ProductCardImage = ({
 
 ProductCardImage.defaultProps = {
   isShareable: false,
-  hasSugar: false,
-  hasGluten: false,
-  hasMilk: false,
+  tags: false,
+  containerClass: "",
+  imageClass: "",
+  shareClass: "",
+  labelContainerClass: "",
+  labelClass: "",
 };
 
 export default ProductCardImage;

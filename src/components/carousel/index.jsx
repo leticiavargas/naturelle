@@ -26,9 +26,9 @@ const Carousel = ({ product }) => {
   });
 
   const showNextImage = () => {
-    const nextIndex = (currentIndex + 1) % product.image.length;
+    const nextIndex = (currentIndex + 1) % product.images.length;
     if (nextIndex === 0) {
-      setCurrentIndex(product.image.length - 1);
+      setCurrentIndex(product.images.length - 1);
     } else {
       setCurrentIndex(nextIndex);
     }
@@ -37,8 +37,8 @@ const Carousel = ({ product }) => {
 
   const showPrevImage = () => {
     const prevIndex =
-      (currentIndex - 1 + product.image.length) % product.image.length;
-    if (prevIndex === product.image.length - 1) {
+      (currentIndex - 1 + product.images.length) % product.images.length;
+    if (prevIndex === product.images.length - 1) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex(prevIndex);
@@ -55,16 +55,24 @@ const Carousel = ({ product }) => {
           transform: `translateX(calc(-${currentIndex}00% + ${offsetX}px))`,
         }}
       >
-        {product.image.map((product, i) => (
+        {product.images.map((image, i) => (
           <div
             className={`carouselImage ${i === currentIndex ? "active" : ""}`}
           >
-            <ProductCardImage key={i} productImage={product}></ProductCardImage>
+            <ProductCardImage
+              key={i}
+              productImage={image}
+              productAltText={`Imagem ${currentIndex + 1} do produto ${
+                product.name
+              }`}
+              tags={product.tags}
+              isShareable={true}
+            ></ProductCardImage>
           </div>
         ))}
       </div>
       <div className="indicators">
-        {product.image.map((_, index) => (
+        {product.images.map((_, index) => (
           <div
             key={index}
             className={`indicator ${index === currentIndex ? "active" : ""}`}
