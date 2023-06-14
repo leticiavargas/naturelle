@@ -1,0 +1,29 @@
+#SCFilterProduct {
+  width: 342px;
+  height: 36px;
+  border: 1px solid #605a57;
+  border-radius: 6px;
+  background: transparent;
+  padding-left: 16px;
+  appearance: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+#SCFilterProduct:focus-within {
+  outline: 1.5px solid #605a57;
+}
+
+.SCCustomSelect label {
+  padding: 0;
+  margin-left: -54.797px;
+  background: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #605a57;
+}
