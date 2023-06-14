@@ -1,0 +1,19 @@
+.mission-screen {
+    box-sizing: border-box;
+    background-color: #fefaef;
+  }
+  
+  .institucional-link {
+    padding: 48px 115px 48px 24px;
+  }
+  
+  .institucional-link p {
+    color: #9c8b8a;
+    font: normal 400 14px "Roboto";
+    text-align: left;
+  }
+  
+  .institucional-link a {
+    color: #e8cb30;
+  }
+  
