@@ -16,9 +16,7 @@
   outline: 1.5px solid #605a57;
 }
 
-.SCCustomSelect button {
-  pointer-events: none;
-  border: none;
+.SCCustomSelect label {
   padding: 0;
   margin-left: -54.797px;
   background: none;

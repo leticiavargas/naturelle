@@ -1,5 +1,5 @@
 import "./App.css";
-import Vitrine from "./pages/Vitrine";
+import Vitrine from "./components/ProductFilterSelect/ProductFilterSelect";
 
 function App() {
   return (

@@ -1,24 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 
-const ProductFilterSelect = ({ onChange, value }) => {
-  const [filters] = useState(["Mais vendido", "Menor preço", "Maior preço"]);
-
-  const handleFilter = () => {
-    // Lógica para aplicar o filtro
-  };
+const ProductFilterSelect = ({ onChange, valueProps }) => {
+  const filters = ["Mais vendido", "Menor preço", "Maior preço"];
 
   return (
     <div className="SCCustomSelect">
-      <select name="" id="SCFilterProduct" value={value} onChange={onChange}>
-        <option value={value || ""}>Selecione um filtro</option>
+      <select
+        name=""
+        id="SCFilterProduct"
+        value={valueProps}
+        onChange={onChange}
+      >
+        <option value={valueProps || ""}>Selecione um filtro</option>
         {filters.map((value, index) => (
           <option key={index} value={value}>
             {value}
           </option>
         ))}
       </select>
-      <button onClick={handleFilter}>Filtrar</button>
+      <label>Filtrar</label>
     </div>
   );
 };
