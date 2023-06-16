@@ -1,0 +1,35 @@
+.ProductSearchContainer {
+    width: 342px;
+    height: 40px;
+    border: 1px solid #9c8b8a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ProductSearchContainer:hover {
+    border: 2px solid #9c8b8a;
+}
+
+.ProductSearchContainer input {
+    flex: 1;
+    height: 85%;
+    border: none;
+}
+
+.ProductSearchContainer input:focus {
+    outline: none;
+}
+
+.ProductSearchContainer img {
+    width: 12px;
+    height: 12px;
+    margin: 0px 10px 0px 10px;
+}
+
+.ProductSearchContainer button {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
