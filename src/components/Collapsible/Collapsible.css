@@ -1,0 +1,28 @@
+.collapsibleSection {
+  font-family: "Roboto", sans-serif;
+}
+.collapsibleLabel {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #605a57;
+  width: 100%;
+  padding: 12px 4%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  color: #26201d;
+}
+
+.collapsibleContent {
+  padding: 7px 4%;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #694948;
+
+  border-bottom: 1px solid #605a57;
+}
