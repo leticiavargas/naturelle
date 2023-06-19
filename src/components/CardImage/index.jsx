@@ -5,7 +5,7 @@ const CardImage = ({ ImagemBackground, TextFront, alt }) => {
     <div className="CardImage">
       <img src={ImagemBackground} alt={alt} />
       <div className="boxText"></div>
-      <h2 id="teste">{TextFront}</h2>
+      <h2 id="subtitle">{TextFront}</h2>
     </div>
   );
 };

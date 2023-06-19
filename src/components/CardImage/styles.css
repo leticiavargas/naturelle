@@ -2,8 +2,6 @@
   position: relative;
 }
 
-
-
 .CardImage img{
 width: 100%;    
 }
@@ -17,11 +15,16 @@ width: 100%;
   height: 80px;
 }
 
-#teste{
+#subtitle{
   position: absolute;
-  bottom: -4px;
+  text-align: left;
+  top: 347px;
+  right: 24px;
+  left: 24px; 
+  bottom: 16px;
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #FEFAEF; 
   opacity: 1;
 }
+
