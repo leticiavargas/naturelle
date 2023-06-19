@@ -1,26 +1,30 @@
-.CardImage {
-  margin-bottom: -90px;
+.CardImage{
+  position: relative;
 }
 
-.CardImage img {
+.CardImage img{
+width: 100%;    
+}
+
+.boxText{
+  position:absolute;
+  bottom: 4px;
+  background:#694948;
+  mix-blend-mode: multiply;
   width: 100%;
-}
-
-.boxText {
-  transform: translate(0%, -125%);
-  background: #000;
-  opacity: 0.6;
-}
-
-.boxText h2 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  color: #fefaef;
-  opacity: 1;
-  padding: 16px;
-  padding-bottom: 0px;
-  padding-left: 24px;
-  padding-right: 102px;
-  text-align: left;
   height: 80px;
 }
+
+#subtitle{
+  position: absolute;
+  text-align: left;
+  top: 347px;
+  right: 24px;
+  left: 24px; 
+  bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FEFAEF; 
+  opacity: 1;
+}
+
