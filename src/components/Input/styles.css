@@ -1,0 +1,45 @@
+.cointainerInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5px;
+  width: 342px;
+  text-align: left;
+}
+
+.cointainerInput label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #694948;
+}
+
+.cointainerInput input {
+  max-width: 342px;
+  border: none;
+  border-bottom: 1px solid #694948;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 7.5px;
+  color: #694948;
+  -webkit-box-shadow: 0 0 0 30px #fefaef inset;
+  -webkit-text-fill-color: #694948 !important;
+}
+
+.cointainerInput input::placeholder {
+  color: #694948;
+}
+
+.cointainerInput input:focus {
+  outline: none;
+}
+
+.cointainerInput p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #9c8b8a;
+}
