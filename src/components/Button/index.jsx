@@ -2,15 +2,23 @@ import "./styles.css";
 import arrowIcon from "./chevron_right.svg";
 
 // Temas padrão: light && dark
+
+// =====================Uso de Icone=====================
 // Para usar o icone padrão: ativar useArrowIcon = true
+// Para passar uma imagem como icone usar iconImage e altIconImage
 // Para usar um icone da react-icons, passar o icone na propriedade Icon
+// Apenas uma das 3 opções acima pode ser usada
+// ===============================================
+
+// className para caso queira aplicar algum css ao botão
+// iconClassName para caso queira aplicar algum css as imagens
 const Button = ({
   type = "button", // submit || reset
   value,
   className,
   theme = "light",
   useArrowIcon = false,
-  iconImageUrl,
+  iconImage,
   altIconImage = "icon image",
   iconClassName,
   Icon,
@@ -29,10 +37,10 @@ const Button = ({
           src={arrowIcon}
           alt="arrow icone"
         />
-      ) : iconImageUrl ? (
+      ) : iconImage ? (
         <img
           className={`image_size ${iconClassName}`}
-          src={iconImageUrl}
+          src={iconImage}
           alt={altIconImage}
         />
       ) : (
