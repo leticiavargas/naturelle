@@ -1,13 +1,16 @@
-import "./styles.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import marcaNaturelle from "../../assets/marcaNaturelle.svg";
 import { Input, Button, HyperLink, IconButton } from "../../components";
 import iconGoogle from "../../assets/iconGoogle.svg";
 import iconFacebook from "../../assets/iconFacebook.svg";
 import iconApple from "../../assets/iconApple.svg";
+import "./styles.css";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
+  const navigate = useNavigate();
+
   const inputOnChangeHandler = (event, key) => {
     setForm((previusValue) => {
       return { ...previusValue, [key]: event.target.value };
@@ -38,7 +41,7 @@ const Login = () => {
           onChange={(event) => inputOnChangeHandler(event, "password")}
         />
         <div className="buttonsFormLogin">
-          <Button value="Entrar" theme="dark" />
+          <Button value="Entrar" theme="dark" onClick={() => navigate("/institucional") } />
           <Button value="Entrar sem login" />
         </div>
       </form>
