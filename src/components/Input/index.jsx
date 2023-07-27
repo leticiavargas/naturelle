@@ -1,6 +1,6 @@
 import "./styles.css";
 
-const Index = ({
+const Input = ({
   type = "text",
   name,
   label,
@@ -25,4 +25,4 @@ const Index = ({
   );
 };
 
-export default Index;
+export default Input;
