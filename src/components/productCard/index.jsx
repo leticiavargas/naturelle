@@ -1,5 +1,5 @@
 import ProductCardImage from "../ProductCardImage/ProductCardImage";
-import CustomizedRating from "../starRating";
+import CustomizedRating from "../StarRating";
 import "./styles.css";
 
 const Card = ({ name, weigth, rating, rate, price, product }) => {
