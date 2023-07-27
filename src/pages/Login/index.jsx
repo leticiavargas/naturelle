@@ -1,11 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 import marcaNaturelle from "../../assets/marcaNaturelle.svg";
-import Input from "../../components/Input";
-import Button from "../../components/Button";
-import HyperLink from "../../components/HyperLink";
-import IconButton from "../../components/IconButton";
-
+import { Input, Button, HyperLink, IconButton } from "../../components";
 import iconGoogle from "../../assets/iconGoogle.svg";
 import iconFacebook from "../../assets/iconFacebook.svg";
 import iconApple from "../../assets/iconApple.svg";
